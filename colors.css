@@ -1,0 +1,12 @@
+:root {
+    /* Palette from your image */
+    --color-dark-blue:     #00101A; /* Very dark blue */
+    --color-prussian-blue: #010c14; /* Deep, cool-toned blue */
+    --color-mustard:       #A47D00; /* Mustard yellow */
+    --color-tuscany-yellow:#FEC317; /* Bright, warm yellow */
+  
+    /* Extra for text & borders in a real layout */
+    --text-light:  #9d2929; /* White text for contrast */
+    --border:      #2E4048; /* A medium-dark blue-gray for borders */
+  }
+  

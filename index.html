@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Two-Column Layout (New Palette)</title>
+  <!-- 1) Load color variables first -->
+  <link rel="stylesheet" href="colors.css">
+  <!-- 2) Then load the main layout/styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>Sidebar Title</h2>
+      <ul>
+        <li><a href="#">Menu Item One</a></li>
+        <li><a href="#">Menu Item Two</a></li>
+        <li><a href="#">Menu Item Three</a></li>
+      </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <h1>Heading One</h1>
+      <p>
+        This is the same design as before, but we’re using the new 
+        color palette (<strong>var(--color-midnight)</strong>, 
+        <strong>var(--color-grape)</strong>, <strong>var(--color-teal)</strong>, 
+        <strong>var(--color-aqua)</strong>, <strong>var(--color-magenta)</strong>).
+      </p>
+
+      <div class="callout">
+        <strong>Note:</strong> This box uses <code>--color-teal</code> as its background 
+        and <code>--color-midnight</code> as its text color.
+      </div>
+
+      <h2>Heading Two</h2>
+      <p>
+        <a href="#">Here is a link</a> (default magenta, hover aqua). 
+        You can swap any variable in the <code>colors.css</code> file 
+        to see if it looks good on this layout.
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
