@@ -9,8 +9,8 @@
 }
 
 body {
-  background-color: var(--background-color); /* Dark black background */
-  color: var(--text-color); /* Neutral gray text */
+  background-color: var(--background-color); /* Dark background */
+  color: var(--text-color); /* Light text */
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
 }
@@ -23,7 +23,7 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  background-color: var(--secondary-color); /* Sidebar in neon gray */
+  background-color: var(--secondary-color); /* Sidebar in dark blue */
   flex: 0 0 18rem; /* Fixed width for sidebar */
   padding: 1.5rem;
   color: var(--text-light-color); /* Bright white text */
@@ -41,15 +41,15 @@ body {
 
 .sidebar li a {
   display: block;
-  color: var(--text-light-color); /* Bright text for links */
+  color: var(--text-color); /* Light gray text for links */
   text-decoration: none;
   padding: 0.5rem 0;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar li a:hover {
-  background-color: var(--primary-color); /* Neon blue hover */
-  color: var(--background-color); /* Contrast dark text */
+  background-color: var(--primary-color); /* Neon cyan hover */
+  color: var(--background-color); /* Invert to dark text */
 }
 
 /* MAIN CONTENT */
@@ -60,19 +60,19 @@ body {
 
 .main-content h1,
 .main-content h2 {
-  color: var(--accent-color); /* Neon pink for headings */
+  color: var(--accent-color); /* Neon magenta for headings */
 }
 
 .callout {
-  background-color: var(--danger-color); /* Neon red for emphasis */
-  color: var(--text-light-color); /* Bright white text */
+  background-color: var(--warning-color); /* Neon orange for emphasis */
+  color: var(--background-color); /* Dark text for contrast */
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 5px;
 }
 
 .button {
-  background-color: var(--primary-color); /* Neon blue buttons */
+  background-color: var(--primary-color); /* Neon cyan buttons */
   color: var(--background-color); /* Dark text for contrast */
   padding: 0.75rem 1.5rem;
   text-decoration: none;
@@ -82,13 +82,13 @@ body {
 }
 
 .button:hover {
-  background-color: var(--accent-color); /* Neon pink hover */
-  color: var(--text-light-color); /* White text */
+  background-color: var(--accent-color); /* Neon magenta hover */
+  color: var(--text-light-color); /* Bright white text */
 }
 
 /* FOOTER */
 footer {
-  background-color: var(--secondary-color); /* Neon gray for footer */
+  background-color: var(--secondary-color); /* Dark blue footer */
   color: var(--text-light-color); /* Bright white text */
   text-align: center;
   padding: 1rem;
