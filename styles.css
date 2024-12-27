@@ -1,7 +1,7 @@
-/* Import the new color variables */
+/* Import the color scheme */
 @import url("colors.css");
 
-/* Base resets */
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,48 +9,47 @@
 }
 
 body {
-  background-color: var(--color-dark-blue);
-  color: var(--text-light);
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  line-height: 1.5;
+  background-color: var(--background-color); /* Dark black background */
+  color: var(--text-color); /* Neutral gray text */
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* Layout container (sidebar + main area) */
+/* Layout container (sidebar + main content) */
 .layout {
   display: flex;
-  min-height: 100vh; /* Fill full browser height */
+  min-height: 100vh; /* Full viewport height */
 }
 
 /* SIDEBAR */
 .sidebar {
-  background-color: var(--color-prussian-blue);
-  flex: 0 0 18rem;  /* e.g., 288px fixed width */
+  background-color: var(--secondary-color); /* Sidebar in neon gray */
+  flex: 0 0 18rem; /* Fixed width for sidebar */
   padding: 1.5rem;
-  border-right: 1px solid var(--border);
+  color: var(--text-light-color); /* Bright white text */
 }
 
 .sidebar h2 {
   margin-bottom: 1rem;
-  color: var(--text-light);
+  color: var(--text-light-color); /* White text for headers */
 }
 
 .sidebar ul {
-  list-style-type: none;
+  list-style: none;
+  padding: 0;
 }
 
 .sidebar li a {
   display: block;
-  color: var(--text-light);
+  color: var(--text-light-color); /* Bright text for links */
   text-decoration: none;
   padding: 0.5rem 0;
-  border-bottom: 1px solid var(--border);
-  transition: color 0.2s ease-in, background-color 0.2s ease-in;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar li a:hover {
-  /* Use the brighter Tuscany Yellow as a hover accent */
-  color: var(--color-tuscany-yellow);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--primary-color); /* Neon blue hover */
+  color: var(--background-color); /* Contrast dark text */
 }
 
 /* MAIN CONTENT */
@@ -59,36 +58,39 @@ body {
   padding: 2rem;
 }
 
-/* Let’s highlight headings with Mustard color */
 .main-content h1,
 .main-content h2 {
-  color: var(--color-mustard);
-  margin-bottom: 1rem;
+  color: var(--accent-color); /* Neon pink for headings */
 }
 
-/* Example callout using Tuscany Yellow as background and dark blue text */
 .callout {
-  background-color: var(--color-tuscany-yellow);
-  color: var(--color-dark-blue);
+  background-color: var(--danger-color); /* Neon red for emphasis */
+  color: var(--text-light-color); /* Bright white text */
   padding: 1rem;
   margin: 1rem 0;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
-/* Links in main content: default to Mustard, hover to Tuscany Yellow */
-.main-content a {
-  color: var(--color-mustard);
+.button {
+  background-color: var(--primary-color); /* Neon blue buttons */
+  color: var(--background-color); /* Dark text for contrast */
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.main-content a:hover {
-  color: var(--color-tuscany-yellow);
+
+.button:hover {
+  background-color: var(--accent-color); /* Neon pink hover */
+  color: var(--text-light-color); /* White text */
 }
 
 /* FOOTER */
 footer {
-  background-color: var(--color-prussian-blue);
-  color: var(--text-light);
+  background-color: var(--secondary-color); /* Neon gray for footer */
+  color: var(--text-light-color); /* Bright white text */
   text-align: center;
   padding: 1rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-color);
 }

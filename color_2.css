@@ -1,0 +1,16 @@
+:root {
+    /* General Colors */
+    --background-color: #0A0E1A; /* Very dark blue background */
+    --text-color: #E0E0E0; /* Neutral light gray for main text */
+    --text-light-color: #FFFFFF; /* Pure white for highlights */
+    --border-color: #1A233A; /* Subtle dark blue-gray border */
+  
+    /* 6-Category Color Scheme */
+    --primary-color: #00FFFF; /* Neon cyan for primary actions */
+    --secondary-color: #2C2F4A; /* Muted dark purple-blue for sidebar/header */
+    --accent-color: #FF00FF; /* Neon magenta for highlights and accents */
+    --success-color: #39FF14; /* Neon green for success messages */
+    --warning-color: #FFAA00; /* Bright orange-yellow for warnings */
+    --danger-color: #FF3131; /* Bright neon red for errors or alerts */
+  }
+  
